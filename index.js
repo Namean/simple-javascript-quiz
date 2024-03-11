@@ -12,7 +12,7 @@
           const answers = [];
   
           // and for each available answer...
-          for(letter in currentQuestion.answers){
+          for(let letter in currentQuestion.answers){
   
             // ...add an HTML radio button
             answers.push(
@@ -131,6 +131,16 @@
           b: "jQuery",
           c: "RequireJS",
           d: "ESLint"
+        },
+        correctAnswer: "d"
+      },
+      {
+        question: "What is 2 + 2?",
+        answers: {
+          a: "22",
+          b: "2+2",
+          c: "0",
+          d: "4"
         },
         correctAnswer: "d"
       }

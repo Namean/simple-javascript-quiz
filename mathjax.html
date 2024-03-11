@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="./style.css" />
+
+    <title>Document</title>
+    <style>
+
+        :root {
+            --blue: #00bfff
+        --blue2: #11aabb;
+        --pink: #ff3399;
+        --green: #00d364;
+        --purple: #61397a;
+        --white: #fff;
+        --black: #1d1d26;
+        --gold: #f8c30f;
+        --text: #b3b3d4;
+        --paper: #f8f6f0;
+        --paper-background: #f2e3b7bb;
+        }
+
+        .coursera {
+            --section-gray: #f2f6fd;
+            --background: #ffffff;
+            --blue:#0056d2;
+            --gray: #e1e1e1;
+            --dark-blue: #4269a6;
+        }
+
+        body {
+            background: var(--paper-background);
+            font-family: Arial, Helvetica, sans-serif;
+            /* color: #f2e3b7bb */
+        }
+
+
+
+        .card-title {
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            /* border-bottom-left: 0; */
+            /* border-bottom-right: 0; */
+            font-family: Arial; 
+            background: #1d1d26; 
+            color: var(--paper);
+            padding: 10px;
+            display: block;
+            border-bottom: solid 1px black;
+            margin-top: 0;
+        }
+
+        .card {
+            border: solid 1px black; 
+            border-radius: 12px; 
+            display: inline-block;
+            background: var(--paper);
+            color: #1d1d26;
+        }
+    </style>
+</head>
+<body>
+    <h1>MathJax Demo</h1>
+
+    <p>
+        When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
+        \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
+      </p>
+
+      <!-- (a + b) + c = a + (b + c) -->
+      <h3>Associative Propert of Addition</h3>
+      <p>\((a + b) + c = a + (b + c)\)</p>
+
+
+      <h3>Associative Propert of Multiplication</h3>
+      <!-- (a * b) * c = a * (b * c) -->
+      <p>\( (a * b) * c = a * (b * c)       \)</p>
+
+
+      <div class="" style="border-radius: 8px; border: solid 1px black; display: inline-block;">
+      <h3 style="border-top-right-radius: 8px; border-top-left-radius: 8px;border-bottom-left: 0; border-bottom-right: 0; font-family: Arial; background: #000; color: #fff; padding: 10px; display: block; border-bottom: solid 1px black; margin-top: 0;">Commutative Property of Addition</h3>
+      <!-- (a * b) * c = a * (b * c) -->
+      <p>\( a + b = b + a       \)</p>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">Commutative Property of Addition</h3>
+        <!-- (a * b) * c = a * (b * c) -->
+        <p>\( a + b = b + a       \)</p>
+        </div>
+
+        <div class="card">
+            <h3 class="card-title">Commutative Property of Multiplication</h3>
+            <!-- (a * b) * c = a * (b * c) -->
+            <p>\( a * b = b * a       \)</p>
+        </div>
+
+
+        <h2>Transitive Property</h2>
+
+        <div class="card">
+            <h3 class="card-title">Transitive Property: if a = b and b = c, then a = c.</h3>
+            <!-- (a * b) * c = a * (b * c) -->
+            <p>\( a * b = b * a       \)</p>
+        </div>
+
+
+
+        <h2>Understood 1</h2>
+
+        <p>Understood 1: Every mathematical value has an implied coefficient of 1, an implied denominator of 1, and an implied exponent of 1.</p>
+
+        <!-- 
+
+            division: 1 / 2  # 1 dividied by 2
+            fraction: \fraq{1}{2}    # 1 over 2
+            pi:  \pi   # ~ 355/113 or 22/7 3.14159
+
+            multiplication: \times,
+            division: \div
+            
+         -->
+
+        <!-- x = 1*x**2 / 1 -->
+        <p>\( x = \frac{1x^1}{1}  \)</p>
+
+<script src="index.js"></script>
+<script type="module" src="./src/index.ts"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>
